@@ -6,6 +6,7 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
+import Head from "next/head";
 import Body from "../components/body";
 import Circle from "../components/circle";
 import Deals from "../components/deals";
@@ -17,6 +18,9 @@ import Othercontent from "../components/othercontent";
 export default function Home() {
   return (
     <Box>
+      <Head>
+        <title>GeniusBrain</title>
+      </Head>
       <Box p={{ base: 10, lg: 20 }} h={"100vh"}>
         <HStack spacing={{ base: 8, lg: 4 }}>
           <Box boxSize={{ base: "40px", lg: "80px" }} cursor={"pointer"}>
